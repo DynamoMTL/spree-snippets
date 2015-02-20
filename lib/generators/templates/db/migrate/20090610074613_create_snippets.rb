@@ -2,6 +2,7 @@ class CreateSnippets < ActiveRecord::Migration
   def self.up
     create_table :snippets do |t|
       t.string :name
+      t.string :link
       t.string :content
       t.integer :created_by
       t.integer :modified_by

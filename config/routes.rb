@@ -6,5 +6,5 @@ Spree::Core::Engine.routes.draw do
       end
     end
   end
-  match "/pages/:slug" => "pages#display", :as => :page
+  get "/pages/:slug" => "pages#display", :as => :page
 end

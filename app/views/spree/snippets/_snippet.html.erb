@@ -1,1 +1,5 @@
-<div id="snippet_<%=@snippet.id%>"><%= @snippet.content %></div>
+<% if @snippet.link.present? %>
+  <%= link_to @snippet.content, @snippet.link %>
+<% else %>
+  <%= @snippet.content %>
+<% end %>
